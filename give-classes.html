@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt_br">
 <head>
     <meta charset="UTF-8">
@@ -14,13 +14,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
+    <script src="./scripts/addField.js" defer></script>
+
 </head>
 <body id="page-give-classes">
 
 <div id="container">
     <header class="page-header">
         <div class="top-bar-container">
-            <a href="/">
+            <a href="./index.html">
                 <img src="images/icons/back.svg" alt="Voltar">
             </a>
             <img src="images/logo.svg" alt="Proffy">
@@ -85,9 +87,9 @@
                 </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="schedule-items">
                 <legend>Horários disponíveis
-                    <button id="add-time"> + Novo horário </button>
+                    <button type="button" id="add-time"> + Novo horário </button>
                 </legend>
 
                 <div class="schedule-item">
@@ -121,15 +123,15 @@
             </fieldset>
         </form>
 
-            <footer>
-                <p>
-                    <img src="images/icons/warning.svg" alt="Aviso importante">
-                    Importante! <br> Preencha todos os dados
-                </p>
+        <footer>
+            <p>
+                <img src="images/icons/warning.svg" alt="Aviso importante">
+                Importante! <br> Preencha todos os dados
+            </p>
 
-                <button type="submit" form="create-class" >Salvar cadastro</button>
+            <button type="submit" form="create-class" >Salvar cadastro</button>
 
-            </footer>
+        </footer>
 
 
     </main>
