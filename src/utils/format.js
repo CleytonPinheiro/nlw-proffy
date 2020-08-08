@@ -27,7 +27,7 @@ function getSubject(subjectNumber) {
 }
 
 function convertHoursToMInutes(time) {
-    const [hour, minutes] = time.plit(":")
+    const [hour, minutes] = time.split(":")
     return Number(((hour * 60)) + minutes)
 }
 

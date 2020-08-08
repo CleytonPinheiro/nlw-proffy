@@ -23,6 +23,6 @@ server
     .get("/", pageLanding)
     .get("/study", pageStudy)
     .get("/give-classes", pageGiveClasses)
-    .post("save-class", saveClasses)
+    .post("/save-classes", saveClasses)
     .listen(5500)
 
