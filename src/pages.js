@@ -44,8 +44,7 @@ async function pageStudy(req, res) {
 }
 
 function pageGiveClasses(req, res) {
-    const data=req.query
-    // console.log(data)
+    const data=req.body
 
     const isNotEmpty = Object.keys(data).length > 0
 
@@ -60,8 +59,14 @@ function pageGiveClasses(req, res) {
     return res.render("give-classes.html", { subjects, weekdays })
 }
 
+    function saveClasses(req, res) {
+
+    }
+
+
 module.exports = {
     pageLanding,
     pageStudy,
-    pageGiveClasses
+    pageGiveClasses,
+    saveClasses
 }
