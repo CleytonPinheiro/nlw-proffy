@@ -24,5 +24,5 @@ server
     .get("/study", pageStudy)
     .get("/give-classes", pageGiveClasses)
     .post("/save-classes", saveClasses)
-    .listen(process.env.PORT || 5500)
+    .listen(5500)
 
